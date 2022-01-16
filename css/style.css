@@ -1,0 +1,221 @@
+body {
+    margin: 0 5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebe1e1;
+}
+
+/*--------------
+ nav-bar styles
+ --------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+nav .heading-one {
+    color: crimson;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav .menu-bar a {
+    color: crimson;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*----------------------------
+ introduction section styles 
+-----------------------------*/
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.introduction .intro {
+    width: 50%;
+}
+
+.introduction .intro .heading-two {
+    color: rgb(26, 111, 209);
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.introduction .intro .para-one {
+    color: crimson;
+    font-size: 16px;
+    font-weight: 600px;
+    margin-bottom: 25px;
+}
+
+.introduction .intro .button {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: crimson;
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+
+.introduction .intro-image {
+    width: 40%;
+    margin-left: 50px;
+}
+
+.introduction .intro-image .intro-img {
+    width: 450px;
+    height: 400px;
+    border-radius: 550px;
+}
+
+/*---------------------
+ logo section styles 
+ ----------------------*/
+.logo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+/*----------------------
+ Gadget Section style 
+ ------------------------*/
+.gadget-section {
+    width: 1047px;
+    height: 1662px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+}
+
+.gadget-section .popular-collection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.gadget-section .popular-collection .heading-three {
+    font-weight: 600;
+    font-size: 28px;
+    color: crimson;
+}
+
+.gadget-section .gadget-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.gadget-section .gadget-collection .gadgets {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 476px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.gadget-section .gadget-collection .gadgets .g-img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: -18px;
+}
+
+.gadget-section .gadget-collection .gadgets h4 {
+    font-weight: 700;
+    font-size: 28px;
+    color: crimson;
+    margin-bottom: -18px;
+}
+
+.gadget-section .gadget-collection .gadgets h5 {
+    font-size: 20px;
+    color: rgb(26, 111, 209);
+    font-weight: 400;
+    margin-bottom: -15px;
+}
+
+.gadget-section .gadget-collection .gadgets .rating {
+    color: crimson;
+}
+
+.gadget-section .gadget-collection .gadgets .fa-star,
+.fa-star-half-alt {
+    color: orangered;
+}
+
+.gadget-section .gadget-collection .gadgets .info {
+    color: crimson;
+}
+
+.gadget-section .see-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    color: crimson;
+}
+
+.gadget-section .see-more span {
+    margin-right: 10px;
+}
+
+/*----------------
+ end part/footer styles 
+ -----------------*/
+.end-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: crimson;
+    color: white;
+}
+
+.end-part .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*-------------------
+    media queries 
+ -------------------*/
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+    .nav {
+        display: none;
+    }
+
+    .introduction {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .gadget-section {
+        width: 100%;
+    }
+
+    .gadget-collection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .end-part {
+        width: 100%;
+    }
